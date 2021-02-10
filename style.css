@@ -1,0 +1,115 @@
+
+
+h1.header1 {
+    font-family: 'Outer Sans';
+    margin-left: 30px;
+    color: #c8ff03;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: -20px;
+    line-height: -4px;
+}
+
+.topbar {
+    background-color:#393E41;
+    padding: 10px;
+}
+
+html, body {
+    margin:0 ;
+    padding: 0;
+    background-color: #fefbf0;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Outer Sans';
+    src: url(fonts/Outer-SansBold.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: 'Space Grotesk';
+    src: url(fonts/SpaceGrotesk.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Space Mono';
+    src: url(fonts/SpaceMono-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+/* ABOUTCONTAINER */
+
+.aboutcontainer{
+    height: 150px;
+    width: 450px;
+    background: #c8ff03;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: 2px solid #c8ff03;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.aboutcontainer p{
+    font-family: 'Space Mono';
+   position: relative;
+   text-align: center;
+   top: -10px;
+   line-height: 20px;
+   letter-spacing: -0.9px;
+   font-size: 16px;
+}
+
+.bottom{
+    width: 250px;
+    height: 30px;
+}
+
+.aboutcontainer h2{
+    font-family: 'Outer Sans';
+    position: relative;
+    text-align: center;
+    top: 0;
+}
+
+/*BARSCONTAINER*/
+
+.barscontainer{
+    height: 210px;
+    width: 550px;
+    background: #c8ff03;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: 2px solid #c8ff03;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.barscontainer p{
+    font-family: 'Space Mono';
+   position: relative;
+   text-align: center;
+   top: -21px;
+   line-height: 4px;
+   letter-spacing: 0.2px;
+   font-size: 18px;
+}
+
+.barscontainer h2{
+    font-family: 'Outer Sans';
+    position: relative;
+    text-align: center;
+    top: -10px;
+    font-size: 30px;
+}
