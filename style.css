@@ -1,18 +1,36 @@
-
+::-webkit-scrollbar {
+    width: 8px;
+    background: #fefbf0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #aaa594;
+    border-radius: 8px;
+  }
 
 h1.header1 {
     font-family: 'Outer Sans';
     margin-left: 30px;
-    color: #c8ff03;
+    color: #462ae7;
     font-weight: bold;
-    letter-spacing: 1.5px;
-    padding: -20px;
-    line-height: -4px;
+    letter-spacing: 2px;
+    padding: -100px;
+    line-height: -20px;
+    text-align: left;
+    font-size: 37px;
+    display: block;
+    
+}
+
+.header{
+  width: 200px;
 }
 
 .topbar {
-    background-color:#393E41;
-    padding: 10px;
+    background-color:#fefbf0;
+    padding: -20px;
+    width: 420px;
+    height: 100px;
 }
 
 html, body {
@@ -20,6 +38,7 @@ html, body {
     padding: 0;
     background-color: #fefbf0;
 }
+
 
 /* FONTS */
 
@@ -44,6 +63,27 @@ html, body {
     font-style: normal;
 }
 
+@font-face{
+    font-family: 'Butler';
+    src: url(fonts/Butler_Bold.otf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+/* COOLTEXT */
+    
+    .cooltext{
+        font-family: 'Outer Sans';
+        color: #462ae7;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        text-align: center;
+        padding: 30px;
+        font-size: 35px;
+    }
+
 
 
 /* ABOUTCONTAINER */
@@ -51,23 +91,25 @@ html, body {
 .aboutcontainer{
     height: 150px;
     width: 450px;
-    background: #c8ff03;
+    background: #fefbf0;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    border: 2px solid #c8ff03;
+    border: 3px solid #462ae7;
     border-radius: 20px;
     margin-top: 15px;
+    
 }
 
 .aboutcontainer p{
     font-family: 'Space Mono';
    position: relative;
    text-align: center;
-   top: -10px;
+   top: -30px;
    line-height: 20px;
-   letter-spacing: -0.9px;
+   letter-spacing: -0.5px;
    font-size: 16px;
+   color: #462ae7;
 }
 
 .bottom{
@@ -79,7 +121,9 @@ html, body {
     font-family: 'Outer Sans';
     position: relative;
     text-align: center;
-    top: 0;
+    top: -10px;
+    font-size: 30px;
+    color: #462ae7;
 }
 
 /*BARSCONTAINER*/
@@ -87,13 +131,14 @@ html, body {
 .barscontainer{
     height: 210px;
     width: 550px;
-    background: #c8ff03;
+    background: #fefbf0;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    border: 2px solid #c8ff03;
+    border: 3px solid #462ae7;
     border-radius: 20px;
-    margin-top: 15px;
+    margin-top: 25px;
+    padding: -20px;
 }
 
 .barscontainer p{
@@ -104,6 +149,7 @@ html, body {
    line-height: 4px;
    letter-spacing: 0.2px;
    font-size: 18px;
+   color: #462ae7;
 }
 
 .barscontainer h2{
@@ -112,4 +158,100 @@ html, body {
     text-align: center;
     top: -10px;
     font-size: 30px;
+    color: #462ae7;
+    padding: -20px;
+}
+
+.mixtapelink{
+    padding: -50px;
+    overflow: hidden;
+    width: 300px;
+}
+
+
+
+/*COOL BUTTON*/
+
+:root {
+    --c: #462ae7;
+  }
+
+nav ul {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+  }
+  
+  nav ul li {
+    color: var(--c);
+    width: 12em;
+    height: 3em;
+    border: 0.19em solid var(--c);
+    text-align: center;
+    line-height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Outer Sans';
+    letter-spacing: 0.1em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.6s;
+    margin: 1em;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  nav ul li:hover {
+    color: #fefbf0;
+  } 
+  
+  nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    transition: 0.6s;
+    left: calc((var(--n) - 1) * 25%);
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+  }
+  
+  nav ul li:hover span {
+    transform: translateY(0) scale(2);
+  }
+  
+  nav ul li span:nth-child(1) {
+    --n: 1;
+  }
+  
+  nav ul li span:nth-child(2) {
+    --n: 2;
+  }
+  
+  nav ul li span:nth-child(3) {
+    --n: 3;
+  }
+  
+  nav ul li span:nth-child(4) {
+    --n: 4;
+  }
+  
+.coolbutton{
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+  left: 50%;
 }
